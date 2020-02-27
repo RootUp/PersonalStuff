@@ -17,7 +17,7 @@ libao-dev apt-file python-pip dput librivet-dev libcue-dev libbellesip-dev libbc
 nvptx-tools texi2html libgnutls-dane0 gnuastro auctex a2ps ; sudo apt-get install -y --reinstall texinfo ; sudo apt-get install -y libgd-dev \
 libsynctex-dev unrar php7.1 postgresql-client-10 libqt4-sql-psql pspg libsipwitch-dev sipwitch p7zip-full zlib1g libzzip-dev \
 libsdl2-dev openssh-server libelf-dev zstd libboost-all-dev g++ automake autoconf autoconf-archive libtool liblz4-dev liblzma-dev \
-zlib1g-dev make libjsoncpp-dev libiberty-dev qemu-kvm qemu virt-manager virt-viewer libvirt-bin \
+zlib1g-dev make libjsoncpp-dev libiberty-dev qemu-kvm qemu virt-manager libavcodec-dev libavutil-dev virt-viewer libvirt-bin \
 
 echo "[+] Installing AFLplusplus"
 git clone https://github.com/vanhauser-thc/AFLplusplus.git
