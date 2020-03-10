@@ -31,3 +31,5 @@ cd llvm_mode/
 make all
 cd ..
 sudo make install
+
+# Tested on 4.15.0-72-generic Ubuntu 18.04
