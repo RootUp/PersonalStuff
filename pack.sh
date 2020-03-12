@@ -18,7 +18,7 @@ nvptx-tools texi2html libgnutls-dane0 gnuastro auctex a2ps ; sudo apt-get instal
 libsynctex-dev unrar php7.1 postgresql-client-10 libqt4-sql-psql pspg libsipwitch-dev sipwitch p7zip-full zlib1g libzzip-dev \
 libsdl2-dev openssh-server libelf-dev zstd libboost-all-dev g++ automake autoconf autoconf-archive libtool liblz4-dev liblzma-dev \
 zlib1g-dev make libjsoncpp-dev libiberty-dev qemu-kvm qemu virt-manager libavcodec-dev libavutil-dev virt-viewer libvirt-bin \
-libdlna-dev winff mencoder libdlna-dev libchromaprint-dev libchromaprint-tools libchromaprint1 libsoxr-dev libsoxr0 checkinstall \
+libdlna-dev winff mencoder libdlna-dev libchromaprint-dev libchromaprint-tools libchromaprint1 libsoxr-dev libcap-dev libsoxr0 checkinstall \
 
 echo "[+] Installing AFLplusplus"
 git clone https://github.com/vanhauser-thc/AFLplusplus.git
