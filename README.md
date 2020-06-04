@@ -13,4 +13,3 @@
 * <b>vim_crashes.zip</b> - Crashes for VIM identified during fuzzing.
 
 Test: http://httpbin.org/basic-auth/test/12345
-Test: http://199.58.85.40/a/
