@@ -89,7 +89,7 @@ action = function(host,port)
     if string.match(response.body, match) then
       stdnse.print_debug("%s: %s GET %s - 200 OK", SCRIPT_NAME,host.targetname or host.ip, path)
       vuln.state = vulns.STATE.VULN
-      TMUI = (("Path traversal: https://%s:%d%s"):format(host.targetname or host.ip,port.number, path))
+      TMUI = (("Verify arbitrary file read: https://%s:%d%s"):format(host.targetname or host.ip,port.number, path))
 		
       if outputFile then
         credentials = response.body:gsub('%W','.')
