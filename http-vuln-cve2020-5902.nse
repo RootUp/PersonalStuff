@@ -8,7 +8,7 @@ local nmap = require "nmap"
 local io = require "io"
 
 description = [[
-This NSE script checks whether the traget server is vulnerable to CVE-2020-5902
+This NSE script checks whether the target server is vulnerable to CVE-2020-5902
 ]]
 ---
 -- @usage
