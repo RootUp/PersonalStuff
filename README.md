@@ -11,5 +11,3 @@
 * <b>tcpcorpus.tar.xz</b> - Corpous for fuzzing tcpdump.
 
 * <b>vim_crashes.zip</b> - Crashes for VIM identified during fuzzing.
-
-Test: http://httpbin.org/basic-auth/test/12345
