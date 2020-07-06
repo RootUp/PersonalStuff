@@ -75,7 +75,7 @@ action = function(host,port)
   local output = {}
   local success = "Host is vulnerable to CVE-2020-5902"
   local fail = "Host is not vulnerable"
-  local match = "[global]"
+  local match = 'root:x:0:0:root'
   local credentials
   local TMUI
 	
