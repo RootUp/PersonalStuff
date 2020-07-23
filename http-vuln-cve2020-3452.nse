@@ -24,7 +24,7 @@ This NSE script checks whether the target server is vulnerable to CVE-2020-3452
 -- 05-07-2020 - Author: Dhiraj Mishra --[[ NMAP Script--]]
 -- @xmloutput
 -- <table key="NMAP-1">
--- <elem key="title">Cisco Adaptive Security Appliance Unauthorized Remote File Reading</elem>
+-- <elem key="title">Cisco Adaptive Security Appliance and FTD Unauthorized Remote File Reading</elem>
 -- <elem key="state">VULNERABLE</elem>
 -- <table key="description">
 -- <elem>A vulnerability in the web services interface of Cisco Adaptive Security Appliance (ASA) Software and Cisco Firepower Threat Defense (FTD) Software could allow an unauthenticated, remote attacker to conduct directory traversal attacks and read sensitive files on a targeted system. The vulnerability is due to a lack of proper input validation of URLs in HTTP requests processed by an affected device. An attacker could exploit this vulnerability by sending a crafted HTTP request containing directory traversal character sequences to an affected device. A successful exploit could allow the attacker to view arbitrary files within the web services file system on the targeted device. The web services file system is enabled when the affected device is configured with either WebVPN or AnyConnect features. This vulnerability cannot be used to obtain access to ASA or FTD system files or underlying operating system (OS) files. 
@@ -40,8 +40,8 @@ This NSE script checks whether the target server is vulnerable to CVE-2020-3452
 -- <table key="extra_info">
 -- </table>
 -- <table key="refs">
--- <elem>https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-ro-path-KJuQhB86</elem>
 -- <elem>https://nvd.nist.gov/vuln/detail/CVE-2020-3452</elem>
+-- <elem>https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-ro-path-KJuQhB86</elem>
 -- </table>
 -- </table>
 
@@ -55,14 +55,14 @@ portrule = shortport.ssl
 action = function(host,port)
   local outputFile = stdnse.get_script_args(SCRIPT_NAME..".output") or nil
   local vuln = {
-    title = 'CISCO ASA Read-Only Path Traversal Vulnerability',
+    title = 'CISCO ASA/FTD Read-Only Path Traversal Vulnerability',
     state = vulns.STATE.NOT_VULN,
     description = [[
 	 A vulnerability in the web services interface of Cisco Adaptive Security Appliance (ASA) Software and Cisco Firepower Threat Defense (FTD) Software could allow an unauthenticated, remote attacker to conduct directory traversal attacks and read sensitive files on a targeted system. The vulnerability is due to a lack of proper input validation of URLs in HTTP requests processed by an affected device. An attacker could exploit this vulnerability by sending a crafted HTTP request containing directory traversal character sequences to an affected device. A successful exploit could allow the attacker to view arbitrary files within the web services file system on the targeted device. The web services file system is enabled when the affected device is configured with either WebVPN or AnyConnect features. This vulnerability cannot be used to obtain access to ASA or FTD system files or underlying operating system (OS) files.
     ]],
     references = {
-      'https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-ro-path-KJuQhB86',
       'https://nvd.nist.gov/vuln/detail/CVE-2020-3452',
+      'https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-ro-path-KJuQhB86',
     },
     dates = {
       disclosure = {year = '2020', month = '07', day = '22'},
