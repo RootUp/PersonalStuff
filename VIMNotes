@@ -1,0 +1,8 @@
+Fuzzing VIM Notes:
+
+test_garbagecollect_now() must be used with care, since it can cause freeing memory may lead to uaf.
+
+cat sgv.vim
+ow?all ??
+se
+./vim -u NONE -e -s -S sgv.vim -c qa
