@@ -30,7 +30,7 @@ action = function(host, port)
     title = 'Pulse Secure Connect "PulsePitfall" CVE-2023-46805 & CVE-2024-21887',
     state = vulns.STATE.NOT_VULN,
     description = [[
-      The host retruns with an empty "403" resposne likely to be vulnerable with CVE-2023-46805 and CVE-2024-21887 Command Injection and Authentication Bypass in Ivanti Connect Secure and Ivanti Policy Secure.
+      The host retruns with an empty "403" response likely to be vulnerable with CVE-2023-46805 and CVE-2024-21887 Command Injection and Authentication Bypass in Ivanti Connect Secure and Ivanti Policy Secure.
     ]],
     references = {
       'https://labs.watchtowr.com/welcome-to-2024-the-sslvpn-chaos-continues-ivanti-cve-2023-46805-cve-2024-21887/',
